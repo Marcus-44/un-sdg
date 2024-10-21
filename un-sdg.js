@@ -22,9 +22,11 @@ export class unSdg extends DDDSuper(I18NMixin(LitElement)) {
     super();
     this.title = "";
     this.t = this.t || {};
+    this.label = "";
     this.t = {
       ...this.t,
       title: "Title",
+    
     };
     this.registerLocalization({
       context: this,
